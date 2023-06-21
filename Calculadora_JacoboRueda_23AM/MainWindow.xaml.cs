@@ -49,6 +49,7 @@ namespace Calculadora_JacoboRueda_23AM
                 {
                     Screen.Clear();
                 }
+
                 else if(value == "AC")
                 {
                     if (Screen.Text.Length == 1)
@@ -65,10 +66,7 @@ namespace Calculadora_JacoboRueda_23AM
                 {
                     HandleEquals(Screen.Text);
                 }
-                else if (IsDecimalSeparator(value))
-                {
-                    HandleDecimalSeparator();
-                }
+               
 
 
             }
@@ -127,7 +125,7 @@ namespace Calculadora_JacoboRueda_23AM
         private void HandleEquals(string ScreenContent)
         {
             string op = FindOperator(ScreenContent);
-            if(!String.IsNullOrEmpty(op))
+            if(!string.IsNullOrEmpty(op))
             {
                 switch(op)
                 {
@@ -148,7 +146,7 @@ namespace Calculadora_JacoboRueda_23AM
         }
         private string Sum()
         {
-            String[] numbers = Screen.Text.Split("+");
+            string[] numbers = Screen.Text.Split("+");
 
             double.TryParse(numbers[0], out double n1);
             double.TryParse(numbers[1], out double n2);
@@ -157,7 +155,7 @@ namespace Calculadora_JacoboRueda_23AM
         }
         private string Res()
         {
-            String[] numbers = Screen.Text.Split("-");
+            string[] numbers = Screen.Text.Split("-");
             double.TryParse(numbers[0], out double n1);
             double.TryParse(numbers[1], out double n2);
 
@@ -194,10 +192,7 @@ namespace Calculadora_JacoboRueda_23AM
             return screenContent.Contains("+") || screenContent.Contains("-") || screenContent.Contains("*")||
                 screenContent.Contains("/");
         }
-        private bool IsDecimalSeparator(string value)
-        {
-            return value == CultureInfo.CurrentCulture.NumberFormat.NumberDecimalSeparator;
-        }
+       
 
         #region
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)      

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Calculadora_JacoboRueda_23AM"
         mc:Ignorable="d"
         
-        Title="Calculadora" Height="465" Width="395" Background="White">
+        Title="Calculadora" Height="475" Width="400" Background="White">
     <Window.Resources>
 
         <!-- Propiedades por defecto de los botones -->
@@ -38,7 +38,7 @@
         <Button Content="3" HorizontalAlignment="Left" Margin="191,296,0,0" VerticalAlignment="Top" Height="48" Width="75" Background="Transparent" BorderThickness="0,0,0,0" Click="Button_Click" FontSize="15"/>
         <Button Content="+" HorizontalAlignment="Left" Margin="271,249,0,0" VerticalAlignment="Top" Height="48" Width="78" Background="Transparent" BorderThickness="0,0,0,0" Click="Button_Click" FontSize="15" FontWeight="Bold"/>
         <Button Content="0" HorizontalAlignment="Left" Margin="109,349,0,0" VerticalAlignment="Top" Height="48" Width="75" Background="Transparent" BorderThickness="0,0,0,0" Click="Button_Click" FontSize="15"/>
-        <Button Content="=" Margin="276,299,31,0" VerticalAlignment="Top" Height="42" Background="Transparent" BorderThickness="0,0,0,0" Click="Button_Click" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.315,0.522"/>
+        <Button Content="=" Margin="278,299,23,0" VerticalAlignment="Top" Height="45" Background="Transparent" BorderThickness="0,0,0,0" Click="Button_Click" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.315,0.522"/>
 
     </Grid>
 </Window> 
